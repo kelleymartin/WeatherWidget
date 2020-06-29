@@ -34,6 +34,7 @@ export default () => {
         text-align: center;
         vertical-align: top;
         width: 205px;
+        margin: 0px;
       }`}
 
       </style>
