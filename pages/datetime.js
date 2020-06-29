@@ -25,6 +25,7 @@ export default () => {
         font-weight: normal;
         text-align: center;
         vertical-align: bottom;
+        width: 205px;
       }
       h4 { 
         color: #bd8163;
