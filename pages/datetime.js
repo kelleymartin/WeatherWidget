@@ -23,7 +23,7 @@ export default () => {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 205px;
+        width: 220px;
         height: 105px;
 
       }
