@@ -33,6 +33,7 @@ export default () => {
         font-weight: medium;
         text-align: center;
         vertical-align: top;
+        width: 205px;
       }`}
 
       </style>
