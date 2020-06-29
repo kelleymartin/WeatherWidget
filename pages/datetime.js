@@ -11,7 +11,7 @@ export default () => {
   }).format();
 
   return (
-    <div>
+    <div className="box">
       <h4>Local time</h4>
       <div className="time">
         {timeString}
@@ -19,21 +19,25 @@ export default () => {
         {dateString}
       </div>
       <style jsx>{`
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 205px;
+        height: 105px;
+
+      }
       .time {
         color: #333;
         font-size: 20px;
         font-weight: normal;
         text-align: center;
-        vertical-align: bottom;
-        width: 205px;
       }
       h4 { 
         color: #bd8163;
         font-size: 20px;
         font-weight: medium;
         text-align: center;
-        vertical-align: top;
-        width: 205px;
         margin: 0px;
       }`}
 
