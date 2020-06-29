@@ -1,0 +1,77 @@
+Weather Pattern,5am,6am,7am,8am,9am,10am,11am,12pm,1pm,2pm,3pm,4pm,5pm,6pm,7pm,8pm,9pm,10pm,11pm,12am,1am,2am,3am,4am
+Fine00,Fine,Sunny,Fine,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Fine,Fine,Fine,Sunny,Fine,Fine,Fine,Sunny,Sunny,Fine
+Fine00 Wind,Weak land,Weak land,Calm,Weak sea,Weak sea,Weak sea,Sea,Weak sea,Sea,Strong sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Weak land,Weak land,Land,Land,Strong land,Strong land
+Fine01,Sunny,Fine,Sunny,Sunny,Sunny,Fine,Sunny,Overcast,Fine,Sunny,Fine,Sunny,Sunny,Overcast,Sunny,Overcast,Sunny,Fine,Sunny,Fine,Fine,Sunny,Fine,Fine
+Fine01 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Weak sea,Sea,Strong sea,Weak sea,Sea,Strong sea,Sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Weak land,Weak land,Land,Weak land,Land,Land,Land
+Fine02,Sunny,Sunny,Fine,Sunny,Fine,Overcast,Fine,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Sunny,Overcast,Sunny,Sunny,Fine,Fine,Fine,Fine,Sunny,Sunny,Sunny
+Fine02 Wind,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Weak sea,Sea,Strong sea,Sea,Sea,Weak sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Land,Strong land,Land,Weak land,Land,Strong land,Land
+Fine03,Sunny,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Sunny,Overcast,Sunny,Fine,Sunny,Sunny,Sunny,Fine,Overcast,Fine,Fine,Sunny,Fine,Sunny,Fine,Fine,Fine
+Fine03 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Weak sea,Sea,Sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Weak land,Land,Strong land,Land,Land,Strong land
+Fine04,Sunny,Sunny,Sunny,Sunny,Overcast,Sunny,Sunny,Fine,Sunny,Overcast,Sunny,Fine,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Fine,Fine,Fine,Fine,Sunny,Sunny
+Fine04 Wind,Land,Weak land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Sea,Sea,Strong sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Land,Strong land,Land,Weak land,Land,Strong land
+Fine05,Sunny,Sunny,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Sunny,Overcast,Sunny,Sunny,Fine,Sunny,Overcast,Sunny,Sunny,Fine,Sunny,Overcast,Sunny,Sunny,Fine,Sunny
+Fine05 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Strong sea,Sea,Weak sea,Sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Weak land,Weak land,Land,Weak land,Land,Strong land,Land,Land
+Fine06,Sunny,Overcast,Sunny,Sunny,Overcast,Fine,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Sunny,Overcast,Overcast,Sunny,Sunny,Fine,Fine,Fine,Sunny,Fine,Sunny,Sunny
+Fine06 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Weak sea,Sea,Strong sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Land,Weak land,Weak land,Land,Land,Strong land,Strong land
+Cloud00,Overcast,Rain Clouds,Overcast,Overcast,Overcast,Sunny,Sunny,Overcast,Overcast,Overcast,Sunny,Sunny,Overcast,Overcast,Overcast,Rain Clouds,Overcast,Overcast,Sunny,Sunny,Sunny,Sunny,Overcast,Overcast
+Cloud00 Wind,Land,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Sea,Sea,Weak sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Weak land,Weak land,Land,Weak land,Land,Strong land,Strong land
+Cloud01,Overcast,Overcast,Overcast,Sunny,Overcast,Rain Clouds,Overcast,Overcast,Sunny,Overcast,Overcast,Overcast,Rain Clouds,Rain Clouds,Overcast,Overcast,Sunny,Sunny,Sunny,Sunny,Overcast,Rain Clouds,Overcast,Overcast
+Cloud01 Wind,Weak land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Weak sea,Sea,Sea,Weak sea,Weak sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Land,Strong land,Strong land,Land,Strong land
+Cloud02,Overcast,Overcast,Rain Clouds,Rain,Rain,Rain,Overcast,Overcast,Rain Clouds,Rain,Rain,Rain,Overcast,Overcast,Rain Clouds,Overcast,Rain Clouds,Overcast,Overcast,Overcast,Overcast,Overcast,Rain Clouds,Overcast
+Cloud02 Wind,Land,Calm,Weak sea,Weak sea,Sea,Sea,Sea,Weak sea,Weak sea,Weak sea,Sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Weak land,Weak land,Land,Land,Strong land,Strong land,Land
+Rain00,Rain,Rain,Rain Clouds,Overcast,Sunny,Rain Clouds,Rain,Rain,Rain,Rain,Rain,Rain,Overcast,Overcast,Rain Clouds,Rain,Rain,Rain,Overcast,Sunny,Overcast,Rain Clouds,Rain,Rain
+Rain00 Wind,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Sea,Sea,Strong sea,Sea,Weak sea,Sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Land,Strong land,Land,Weak land,Land,Strong land
+Rain01,Rain,Rain,Rain,Rain,Overcast,Rain Clouds,Rain,Rain,Overcast,Overcast,Rain Clouds,Heavy Rain,Rain,Rain,Rain,Rain,Sunny,Sunny,Overcast,Rain Clouds,Rain,Rain,Rain,Rain
+Rain01 Wind,Land,Calm,Weak sea,Weak sea,Sea,Sea,Strong sea,Sea,Strong sea,Sea,Weak sea,Sea,Weak sea,Weak sea,Calm,Weak land,Land,Land,Weak land,Weak land,Land,Land,Strong land,Strong land
+Rain02,Rain,Rain,Rain,Rain Clouds,Rain,Sunny,Rain Clouds,Rain,Rain,Rain,Overcast,Rain,Rain,Rain,Rain Clouds,Heavy Rain,Rain,Rain,Rain,Rain Clouds,Overcast,Rain,Rain,Rain
+Rain02 Wind,Strong land,Weak land,Calm,Weak sea,Sea,Strong sea,Strong sea,Sea,Strong sea,Sea,Strong sea,Sea,Weak sea,Calm,Weak land,Land,Land,Weak land,Land,Strong land,Land,Weak land,Land,Strong land
+Rain03,Rain,Rain Clouds,Rain,Rain,Heavy Rain,Heavy Rain,Rain,Rain,Heavy Rain,Heavy Rain,Heavy Rain,Heavy Rain,Rain,Rain,Rain,Rain,Rain,Overcast,Rain Clouds,Rain,Rain,Rain,Rain,Rain
+Rain03 Wind,Land,Calm,Weak sea,Weak sea,Sea,Sea,Strong sea,Sea,Sea,Strong sea,Strong sea,Sea,Weak sea,Sea,Calm,Weak land,Land,Land,Weak land,Land,Strong land,Land,Weak land,Land
+Rain04,Rain,Rain,Heavy Rain,Heavy Rain,Heavy Rain,Heavy Rain,Rain,Heavy Rain,Heavy Rain,Heavy Rain,Rain,Rain,Heavy Rain,Heavy Rain,Heavy Rain,Heavy Rain,Heavy Rain,Heavy Rain,Rain,Rain,Rain,Heavy Rain,Heavy Rain,Rain
+Rain04 Wind,Strong land,Land,Calm,Sea,Weak sea,Sea,Weak sea,Sea,Strong sea,Sea,Strong sea,Sea,Weak sea,Calm,Land,Land,Strong land,Land,Strong land,Land,Weak land,Weak land,Land,Land
+Rain05,Heavy Rain,Heavy Rain,Rain,Rain,Heavy Rain,Heavy Rain,Heavy Rain,Heavy Rain,Rain,Heavy Rain,Heavy Rain,Heavy Rain,Heavy Rain,Heavy Rain,Heavy Rain,Rain,Rain,Overcast,Sunny,Rain Clouds,Rain,Rain,Heavy Rain,Rain
+Rain05 Wind,Weak land,Calm,Weak sea,Sea,Strong sea,Sea,Sea,Weak sea,Sea,Strong sea,Sea,Weak sea,Sea,Weak sea,Calm,Weak land,Land,Strong land,Land,Weak land,Weak land,Land,Strong land,Land
+FineCloud00,Rain,Overcast,Overcast,Overcast,Overcast,Overcast,Sunny,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Sunny,Sunny,Overcast,Overcast,Overcast,Overcast,Rain Clouds,Overcast,Rain Clouds,Rain Clouds,Overcast
+FineCloud00 Wind,Weak land,Calm,Weak sea,Weak sea,Weak sea,Sea,Weak sea,Sea,Strong sea,Sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Land,Weak land,Strong land,Land,Land,Strong land
+FineCloud01,Overcast,Sunny,Sunny,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Sunny,Overcast,Rain Clouds,Rain,Rain,Overcast,Overcast,Rain Clouds,Overcast,Overcast,Overcast,Rain Clouds,Overcast,Overcast,Overcast
+FineCloud01 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Sea,Strong sea,Sea,Weak sea,Strong sea,Sea,Weak sea,Weak sea,Calm,Weak land,Land,Land,Weak land,Strong land,Land,Strong land,Land,Land
+FineCloud02,Overcast,Fine,Sunny,Fine,Sunny,Sunny,Overcast,Overcast,Sunny,Overcast,Overcast,Overcast,Overcast,Overcast,Rain Clouds,Overcast,Rain Clouds,Rain Clouds,Rain,Rain,Rain,Overcast,Overcast,Overcast
+FineCloud02 Wind,Weak land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Weak sea,Sea,Strong sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Land,Strong land,Land,Weak land,Strong land,Land,Strong land
+CloudFine00,Rain Clouds,Rain,Rain,Overcast,Rain,Sunny,Overcast,Sunny,Overcast,Overcast,Sunny,Sunny,Fine,Sunny,Sunny,Sunny,Sunny,Fine,Fine,Fine,Sunny,Sunny,Sunny,Sunny
+CloudFine00 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Sea,Weak sea,Sea,Strong sea,Sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Land,Strong land,Strong land,Land,Strong land
+CloudFine01,Sunny,Rain,Overcast,Overcast,Overcast,Overcast,Rain Clouds,Rain,Sunny,Sunny,Overcast,Sunny,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Sunny,Sunny,Fine,Fine,Sunny,Sunny
+CloudFine01 Wind,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Weak sea,Sea,Sea,Strong sea,Sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Land,Land,Weak land,Weak land,Weak land,Land,Land,Strong land
+CloudFine02,Fine,Overcast,Rain Clouds,Rain,Overcast,Rain Clouds,Rain,Sunny,Sunny,Sunny,Sunny,Fine,Sunny,Fine,Sunny,Fine,Fine,Sunny,Fine,Sunny,Sunny,Sunny,Sunny,Sunny
+CloudFine02 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Sea,Strong sea,Sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Strong land,Land,Weak land,Land,Strong land,Land
+FineRain00,Sunny,Sunny,Fine,Sunny,Fine,Sunny,Fine,Sunny,Rain,Sunny,Sunny,Sunny,Sunny,Sunny,Fine,Sunny,Fine,Sunny,Sunny,Fine,Fine,Sunny,Sunny,Sunny
+FineRain00 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Sea,Strong sea,Sea,Strong sea,Sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Land,Land,Strong land,Land,Weak land,Land,Strong land
+FineRain01,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Sunny,Rain,Overcast,Rain,Sunny,Sunny,Sunny,Fine,Sunny,Sunny,Sunny,Sunny,Sunny,Fine,Sunny,Fine,Sunny,Sunny
+FineRain01 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Sea,Strong sea,Strong sea,Sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Weak land,Weak land,Weak land,Land,Strong land,Weak land,Strong land
+FineRain02,Fine,Fine,Sunny,Fine,Sunny,Fine,Sunny,Fine,Sunny,Sunny,Heavy Rain,Overcast,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Fine,Sunny,Fine,Fine,Sunny,Sunny
+FineRain02 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Weak sea,Sea,Sea,Strong sea,Sea,Strong sea,Sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Land,Strong land,Land,Land,Strong land
+FineRain03,Sunny,Sunny,Sunny,Fine,Sunny,Fine,Fine,Sunny,Sunny,Heavy Rain,Rain,Sunny,Sunny,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Fine,Fine,Sunny,Fine,Sunny
+FineRain03 Wind,Land,Weak land,Weak land,Calm,Weak sea,Weak sea,Weak sea,Sea,Sea,Sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Weak land,Weak land,Weak land,Land,Strong land,Strong land,Strong land
+CloudRain00,Rain,Overcast,Overcast,Sunny,Overcast,Overcast,Rain Clouds,Rain,Rain,Rain,Heavy Rain,Heavy Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain
+CloudRain00 Wind,Land,Calm,Weak sea,Weak sea,Weak sea,Sea,Strong sea,Sea,Sea,Strong sea,Sea,Sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Strong land,Land,Weak land,Weak land,Land,Strong land
+CloudRain01,Overcast,Sunny,Sunny,Overcast,Overcast,Rain,Rain,Rain,Overcast,Overcast,Rain Clouds,Rain,Rain,Rain,Rain,Rain,Overcast,Rain,Rain,Rain,Rain,Rain,Rain,Overcast
+CloudRain01 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Weak sea,Weak sea,Sea,Strong sea,Sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Weak land,Land,Land,Strong land,Land,Strong land,Land
+CloudRain02,Rain,Overcast,Overcast,Overcast,Sunny,Sunny,Overcast,Overcast,Rain Clouds,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain Clouds,Heavy Rain,Heavy Rain,Rain,Heavy Rain,Rain
+CloudRain02 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Sea,Weak sea,Weak sea,Sea,Sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Land,Strong land,Strong land,Land,Weak land,Land,Strong land
+RainCloud00,Overcast,Rain,Rain,Overcast,Overcast,Rain Clouds,Rain,Rain,Overcast,Rain Clouds,Overcast,Sunny,Sunny,Overcast,Overcast,Overcast,Overcast,Overcast,Overcast,Overcast,Rain Clouds,Overcast,Overcast,Overcast
+RainCloud00 Wind,Land,Calm,Weak sea,Weak sea,Weak sea,Sea,Weak sea,Weak sea,Sea,Sea,Strong sea,Sea,Weak sea,Calm,Weak land,Weak land,Land,Weak land,Land,Strong land,Land,Weak land,Land,Strong land
+RainCloud01,Rain Clouds,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Rain,Overcast,Rain Clouds,Overcast,Overcast,Overcast,Overcast,Overcast,Sunny,Sunny,Overcast,Overcast,Overcast,Overcast,Overcast
+RainCloud01 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Weak sea,Sea,Weak sea,Sea,Strong sea,Sea,Sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Land,Land,Strong land,Land,Strong land,Strong land
+RainCloud02,Rain Clouds,Heavy Rain,Heavy Rain,Rain,Rain,Rain,Overcast,Overcast,Rain,Overcast,Overcast,Overcast,Overcast,Overcast,Rain Clouds,Overcast,Rain Clouds,Overcast,Overcast,Sunny,Sunny,Overcast,Overcast,Rain Clouds
+RainCloud02 Wind,Weak sea,Calm,Weak sea,Weak sea,Weak sea,Sea,Weak sea,Sea,Strong sea,Strong sea,Sea,Sea,Weak sea,Calm,Weak land,Weak land,Weak land,Land,Strong land,Land,Weak land,Land,Weak land,Strong land
+Commun00,Sunny,Fine,Sunny,Sunny,Sunny,Fine,Sunny,Overcast,Fine,Sunny,Fine,Sunny,Sunny,Overcast,Sunny,Overcast,Sunny,Fine,Sunny,Fine,Fine,Sunny,Fine,Fine
+Commun00 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Weak sea,Sea,Strong sea,Weak sea,Sea,Strong sea,Sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Weak land,Weak land,Land,Weak land,Land,Land,Land
+EventDay00,Sunny,Fine,Sunny,Sunny,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Fine,Sunny,Sunny,Fine,Sunny,Fine,Sunny,Fine,Sunny,Fine,Fine,Sunny,Fine,Fine
+EventDay00 Wind,Land,Weak land,Calm,Weak sea,Weak sea,Weak sea,Sea,Strong sea,Weak sea,Sea,Strong sea,Sea,Weak sea,Weak sea,Calm,Weak land,Weak land,Weak land,Weak land,Land,Weak land,Land,Land,Land
+,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,
+,,Fine,Clear sky without a hint of clouds.,,,,,,,,,,,,,,,,,,,,,
+,,Sunny,Clear sky with a few clouds,,,,,,,,,,,,,,,,,,,,,
+,,Overcast,Lots of cloud but still pleasant,,,,,,,,,,,,,,,,,,,,,
+,,Rain Clouds,"Lots of clouds, gloomy atmosphere, only occurs before or after rain.",,,,,,,,,,,,,,,,,,,,,
+,,Rain,"Light rainfall, light snowfall in Winter.",,,,,,,,,,,,,,,,,,,,,
+,,Heavy Rain,"Heavy rainfall, heavy snowfall in Winter.",,,,,,,,,,,,,,,,,,,,,
