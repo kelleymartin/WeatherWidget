@@ -22,6 +22,9 @@ export default () => {
       .time {
         color: #333;
         font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: bottom;
       }
       h4 { 
         color: #bd8163;
