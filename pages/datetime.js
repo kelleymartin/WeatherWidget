@@ -22,6 +22,7 @@ export default () => {
       .time {
         color: #333;
         font-size: 20px;
+        padding: 10px;
       }`}
 
       </style>
@@ -30,8 +31,7 @@ export default () => {
       body {
         padding: 0px;
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: Ubuntu, sans-serif;
       }
 
       * {
