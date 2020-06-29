@@ -23,6 +23,11 @@ export default () => {
         color: #333;
         font-size: 20px;
         padding: 10px;
+      }
+      h4 { 
+        color: #bd8163;
+        padding: 10px;
+        text-align: center;
       }`}
 
       </style>
