@@ -93,22 +93,22 @@ export default () => {
 
   return (
     <div className="wrapper">
-      <div className="hero-icon">
+      <div className="icon-hero">
         <WeatherIcon weather={now} size={80} />
       </div>
-      <div>{nowLabel}</div>
-      <div>{nowPlus1Label}</div>
-      <div>{nowPlus2Label}</div>
-      <div className="weatherPattern">
+      <div className="time-current">{nowLabel}</div>
+      <div className="time-next1">{nowPlus1Label}</div>
+      <div className="time-next2">{nowPlus2Label}</div>
+      <div className="weather-pattern">
         {now.label}
-        <div className="hemisphere">Northern Hemisphere</div>
       </div>
-      <div>
+      <div className="icon-next1">
         <WeatherIcon weather={nowPlus1} size={60} />
       </div>
-      <div>
+      <div className="icon-next2">
         <WeatherIcon weather={nowPlus2} size={60} />
       </div>
+      <div className="hemisphere">Northern Hemisphere</div>
       <style jsx global>{`
       html,
       body {
@@ -123,27 +123,60 @@ export default () => {
 
       .wrapper {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr 1fr;
-        grid-template-rows: 15px 65px;
+        grid-template-columns: 80px 160px 80px 80px;
+        grid-template-rows: 15px 50px 15px;
+        grid-template-areas:
+        "a b c d"
+        "a e f g"
+        "a h f g"
       }
 
-      .hero-icon {
-        grid-row-start: 1;
-        grid-row-end: 3;
+      .icon-hero {
+        grid-area: a;
       }
 
-      .weatherPattern {
+      .icon-next1 {
+        align-self: center;
+        grid-area: f;
+      }
+
+      .icon-next2 {
+        align-self: center;
+        grid-area: g;
+      }
+
+      .weather-pattern {
+        grid-area: e;
         font-family: Ubuntu, sans-serif;
         font-size: 20px;
         font-weight: 700;
+        align-self: center;
       }
 
       .hemisphere {
+        grid-area: h;
         font-family: Ubuntu, sans-serif;
         font-size: 16px;
         font-weight: 400;
+        align-self: end;
       }
 
+      .time-current {
+        grid-area: b;
+        align-self: start;
+      }
+
+      .time-next1 {
+        grid-area: c;
+        align-self: start;
+        justify-self: center;
+      }
+
+      .time-next2 {
+        grid-area: d;
+        align-self: start;
+        justify-self: center;
+      }
       * {
         box-sizing: border-box;
       }
