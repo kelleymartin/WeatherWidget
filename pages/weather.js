@@ -117,7 +117,7 @@ export default () => {
         font-family: Ubuntu, sans-serif;
         font-size: 16px;
         font-weight: 400;
-        width: 390px;
+        width: 400px;
         height: 80px;
       }
 
@@ -147,6 +147,7 @@ export default () => {
 
       .weather-pattern {
         grid-area: e;
+        padding-left: 5px;
         font-family: Ubuntu, sans-serif;
         font-size: 20px;
         font-weight: 700;
@@ -155,14 +156,16 @@ export default () => {
 
       .hemisphere {
         grid-area: h;
+        padding-left: 5px;
         font-family: Ubuntu, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         align-self: end;
       }
 
       .time-current {
         grid-area: b;
+        padding-left: 5px;
         align-self: start;
       }
 
