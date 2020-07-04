@@ -61,7 +61,7 @@ function getWeatherInXHours(inXHours) {
   };
 }
 
-function WeatherIcon({ weather, size }) {
+function WeatherIcon({ weather, size, className }) {
   // 'Heavy Rain' -> 'HeavyRain'
   const noSpaceWeather = weather.weather.replace(/ /g, '');
 
@@ -69,7 +69,7 @@ function WeatherIcon({ weather, size }) {
   const camelWeather = noSpaceWeather[0].toLowerCase() + noSpaceWeather.slice(1);
 
   const filename = `/weather-icons/${camelWeather}${weather.isDay ? 'Day' : 'Night'}.svg`;
-  return <img src={filename} alt={weather.label} title={weather.label} width={size} height={size} />;
+  return <img src={filename} alt={weather.label} title={weather.label} width={size} height={size} className={className}/>;
 }
 
 export default () => {
@@ -102,12 +102,8 @@ export default () => {
       <div className="weather-pattern">
         {now.label}
       </div>
-      <div className="icon-next1">
-        <WeatherIcon weather={nowPlus1} size={60} />
-      </div>
-      <div className="icon-next2">
-        <WeatherIcon weather={nowPlus2} size={60} />
-      </div>
+      <WeatherIcon weather={nowPlus1} size={60} className="icon-next1"/>
+      <WeatherIcon weather={nowPlus2} size={60} className="icon-next2"/>
       <div className="hemisphere">Northern Hemisphere</div>
       <style jsx global>{`
       html,
@@ -136,12 +132,14 @@ export default () => {
       }
 
       .icon-next1 {
-        align-self: center;
+        align-self: end;
+        justify-self: center;
         grid-area: f;
       }
 
       .icon-next2 {
-        align-self: center;
+        align-self: end;
+        justify-self: center;
         grid-area: g;
       }
 
