@@ -94,39 +94,54 @@ export default () => {
   return (
     <div className="wrapper">
       <div className="hero-icon">
-        <WeatherIcon weather={now} size={60} />
+        <WeatherIcon weather={now} size={80} />
       </div>
       <div>{nowLabel}</div>
       <div>{nowPlus1Label}</div>
       <div>{nowPlus2Label}</div>
-      <div>
+      <div className="weatherPattern">
         {now.label}
-        <div>Northern Hemisphere</div>
+        <div className="hemisphere">Northern Hemisphere</div>
       </div>
       <div>
-        <WeatherIcon weather={nowPlus1} size={40} />
+        <WeatherIcon weather={nowPlus1} size={60} />
       </div>
       <div>
-        <WeatherIcon weather={nowPlus2} size={40} />
+        <WeatherIcon weather={nowPlus2} size={60} />
       </div>
       <style jsx global>{`
       html,
       body {
         padding: 0px;
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-family: Ubuntu, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        width: 390px;
+        height: 80px;
       }
 
       .wrapper {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 15px 65px;
       }
 
       .hero-icon {
         grid-row-start: 1;
         grid-row-end: 3;
+      }
+
+      .weatherPattern {
+        font-family: Ubuntu, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .hemisphere {
+        font-family: Ubuntu, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
       }
 
       * {
