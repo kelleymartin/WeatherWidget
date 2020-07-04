@@ -151,6 +151,7 @@ export default () => {
         font-family: Ubuntu, sans-serif;
         font-size: 20px;
         font-weight: 700;
+        color: #333;
         align-self: center;
       }
 
@@ -160,23 +161,27 @@ export default () => {
         font-family: Ubuntu, sans-serif;
         font-size: 14px;
         font-weight: 400;
+        color: #333;
         align-self: end;
       }
 
       .time-current {
         grid-area: b;
+        color: #333;
         padding-left: 5px;
         align-self: start;
       }
 
       .time-next1 {
         grid-area: c;
+        color: #333;
         align-self: start;
         justify-self: center;
       }
 
       .time-next2 {
         grid-area: d;
+        color: #333;
         align-self: start;
         justify-self: center;
       }
