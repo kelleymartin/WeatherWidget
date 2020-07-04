@@ -4,6 +4,26 @@ import LappiceByMonth from '../months';
 const ONE_HOUR_IN_MILLISECONDS = 1000 * 60 * 60;
 const ONE_DAY_IN_MILLISECONDS = ONE_HOUR_IN_MILLISECONDS * 24;
 
+const NICE_NAMES = {
+  'Sunny': {
+    day: 'Sunny',
+    night: 'Moonlit',
+  },
+  // 'Cloudy': 'Chance of Meatballs',
+};
+
+function getDisplayName(weatherName, isDay) {
+  const niceName = NICE_NAMES[weatherName];
+  if (!niceName) {
+    return weatherName;
+  }
+
+  if (typeof niceName === 'string') {
+    return niceName;
+  }
+  return niceName[isDay ? 'day' : 'night'];
+}
+
 function getWeatherInXHours(inXHours) {
 
   const hourTimestamp = Date.now() + ONE_HOUR_IN_MILLISECONDS * inXHours;
@@ -32,37 +52,62 @@ function getWeatherInXHours(inXHours) {
   const patternName = lappiceDays[dayOffset].patternName;
 
   const weatherPattern = WeatherWindPatterns[patternName].weather;
+  const isDay = hour >= 5 && hour < 19;
+  const weatherName = weatherPattern[hourOffset];
   return {
-    date: `${monthString} ${dayOffset + 1} / ${hour}`,
-    isDay: hour >= 5 && hour < 19,
-    weather: weatherPattern[hourOffset],
+    isDay,
+    weather: weatherName,
+    label: getDisplayName(weatherName, isDay),
   };
+}
+
+function WeatherIcon({ weather, size }) {
+  // 'Heavy Rain' -> 'HeavyRain'
+  const noSpaceWeather = weather.weather.replace(/ /g, '');
+
+  // 'HeavyRain' -> 'h' + 'eavyRain' -> 'heavyRain'
+  const camelWeather = noSpaceWeather[0].toLowerCase() + noSpaceWeather.slice(1);
+
+  const filename = `/weather-icons/${camelWeather}${weather.isDay ? 'Day' : 'Night'}.svg`;
+  return <img src={filename} alt={weather.label} title={weather.label} width={size} height={size} />;
 }
 
 export default () => {
 
   const now = getWeatherInXHours(0);
-  const next = getWeatherInXHours(1);
-  const prev = getWeatherInXHours(-1);
+  const nowPlus1 = getWeatherInXHours(1);
+  const nowPlus2 = getWeatherInXHours(2);
 
-  const nexts = Array.from({length: 20}, (_, idx) => {
-    return getWeatherInXHours(idx);
-  });
+  const nowLabel = new Intl.DateTimeFormat('en-US', {
+    hour: 'numeric', minute: 'numeric',
+    timeZone: 'America/Los_Angeles',
+  }).format();
+  const nowPlus1Label = new Intl.DateTimeFormat('en-US', {
+    hour: 'numeric',
+    timeZone: 'America/Los_Angeles',
+  }).format(Date.now() + ONE_HOUR_IN_MILLISECONDS);
+  const nowPlus2Label = new Intl.DateTimeFormat('en-US', {
+    hour: 'numeric',
+    timeZone: 'America/Los_Angeles',
+  }).format(Date.now() + 2 * ONE_HOUR_IN_MILLISECONDS);
 
   return (
-    <div>
-      <h4>Local weather</h4>
-      <div className="time">
-        Now: {now.weather} at {now.isDay ? 'day' : 'night'}
-        Next: {next.weather} at {next.isDay ? 'day' : 'night'}
-        Before: {prev.weather} at {prev.isDay ? 'day' : 'night'}
-        {
-          nexts.map((n, idx) => (
-            <div>
-              At #{idx} ({n.date}): {n.weather} at {n.isDay ? 'day' : 'night'}
-            </div>
-          ))
-        }
+    <div className="wrapper">
+      <div className="hero-icon">
+        <WeatherIcon weather={now} size={60} />
+      </div>
+      <div>{nowLabel}</div>
+      <div>{nowPlus1Label}</div>
+      <div>{nowPlus2Label}</div>
+      <div>
+        {now.label}
+        <div>Northern Hemisphere</div>
+      </div>
+      <div>
+        <WeatherIcon weather={nowPlus1} size={40} />
+      </div>
+      <div>
+        <WeatherIcon weather={nowPlus2} size={40} />
       </div>
       <style jsx global>{`
       html,
@@ -71,6 +116,17 @@ export default () => {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
           Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+      .hero-icon {
+        grid-row-start: 1;
+        grid-row-end: 3;
       }
 
       * {
