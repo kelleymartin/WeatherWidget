@@ -1,3 +1,5 @@
+import {useEffect, useState} from 'react';
+
 import WeatherWindPatterns from '../data/weather-wind-patterns.json';
 import LappiceByMonth from '../months';
 
@@ -24,9 +26,9 @@ function getDisplayName(weatherName, isDay) {
   return niceName[isDay ? 'day' : 'night'];
 }
 
-function getWeatherInXHours(inXHours) {
+function getWeatherInXHours(inXHours, currentTime) {
 
-  const hourTimestamp = Date.now() + ONE_HOUR_IN_MILLISECONDS * inXHours;
+  const hourTimestamp = currentTime + ONE_HOUR_IN_MILLISECONDS * inXHours;
   const hour = Number(new Intl.DateTimeFormat('en-US', {
     hour: 'numeric',
     hour12: false,
@@ -74,22 +76,40 @@ function WeatherIcon({ weather, size, className }) {
 
 export default () => {
 
-  const now = getWeatherInXHours(0);
-  const nowPlus1 = getWeatherInXHours(1);
-  const nowPlus2 = getWeatherInXHours(2);
+  const [currentTime, setCurrentTime] = useState(Date.now());
+
+  useEffect(() => {
+    let timerId = null;
+
+    function cleanup() {
+      clearInterval(timerId);
+      timerId = null;
+    }
+
+    function onTimer() {
+      setCurrentTime(Date.now());
+    }
+    timerId = setInterval(onTimer, 30 * 1000);
+
+    return cleanup;
+  });
+
+  const now = getWeatherInXHours(0, currentTime);
+  const nowPlus1 = getWeatherInXHours(1, currentTime);
+  const nowPlus2 = getWeatherInXHours(2, currentTime);
 
   const nowLabel = new Intl.DateTimeFormat('en-US', {
     hour: 'numeric', minute: 'numeric',
     timeZone: 'America/Los_Angeles',
-  }).format();
+  }).format(currentTime);
   const nowPlus1Label = new Intl.DateTimeFormat('en-US', {
     hour: 'numeric',
     timeZone: 'America/Los_Angeles',
-  }).format(Date.now() + ONE_HOUR_IN_MILLISECONDS);
+  }).format(currentTime + ONE_HOUR_IN_MILLISECONDS);
   const nowPlus2Label = new Intl.DateTimeFormat('en-US', {
     hour: 'numeric',
     timeZone: 'America/Los_Angeles',
-  }).format(Date.now() + 2 * ONE_HOUR_IN_MILLISECONDS);
+  }).format(currentTime + 2 * ONE_HOUR_IN_MILLISECONDS);
 
   return (
     <div className="wrapper">
