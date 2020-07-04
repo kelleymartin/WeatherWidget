@@ -99,7 +99,7 @@ export default () => {
   const nowPlus2 = getWeatherInXHours(2, currentTime);
 
   const nowLabel = new Intl.DateTimeFormat('en-US', {
-    hour: 'numeric', minute: 'numeric',
+    hour: 'numeric', minute: 'numeric', weekday: 'long',
     timeZone: 'America/Los_Angeles',
   }).format(currentTime);
   const nowPlus1Label = new Intl.DateTimeFormat('en-US', {
