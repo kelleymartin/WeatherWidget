@@ -78,6 +78,14 @@ export default () => {
 
   const [currentTime, setCurrentTime] = useState(Date.now());
 
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    window.requestAnimationFrame(() => {
+      setIsLoading(false);
+    });
+  });
+
   useEffect(() => {
     let timerId = null;
 
@@ -93,6 +101,10 @@ export default () => {
 
     return cleanup;
   });
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
 
   const now = getWeatherInXHours(0, currentTime);
   const nowPlus1 = getWeatherInXHours(1, currentTime);
