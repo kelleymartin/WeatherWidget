@@ -137,6 +137,7 @@ export default () => {
       <WeatherIcon weather={nowPlus1} size={60} className="icon-next1"/>
       <WeatherIcon weather={nowPlus2} size={60} className="icon-next2"/>
       <div className="hemisphere">Northern Hemisphere</div>
+
       <style jsx global>{`
       html,
       body {
