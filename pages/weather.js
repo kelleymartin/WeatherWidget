@@ -7,11 +7,14 @@ const ONE_HOUR_IN_MILLISECONDS = 1000 * 60 * 60;
 const ONE_DAY_IN_MILLISECONDS = ONE_HOUR_IN_MILLISECONDS * 24;
 
 const NICE_NAMES = {
-  'Sunny': {
-    day: 'Sunny',
-    night: 'Moonlit',
-  },
+  'Sunny': 'Partly Cloudy',
+  'Overcast': 'Partly Cloudy',
+  'Fine': 'Clear'
   // 'Cloudy': 'Chance of Meatballs',
+  //'Sunny': {
+  //  day: 'Sunny',
+  //  night: 'Moonlit',
+  //},
 };
 
 function getDisplayName(weatherName, isDay) {
