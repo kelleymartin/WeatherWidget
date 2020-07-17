@@ -126,7 +126,7 @@ export default () => {
   return (
     <div className="wrapper">
       <div className="icon-hero">
-        <WeatherIcon weather={now} size={80} />
+        <WeatherIcon weather={now} size={90} />
       </div>
       <div className="time-current">{nowLabel}</div>
       <div className="time-next1">{nowPlus1Label}</div>
@@ -134,8 +134,8 @@ export default () => {
       <div className="weather-pattern">
         {now.label}
       </div>
-      <WeatherIcon weather={nowPlus1} size={60} className="icon-next1"/>
-      <WeatherIcon weather={nowPlus2} size={60} className="icon-next2"/>
+      <WeatherIcon weather={nowPlus1} size={70} className="icon-next1"/>
+      <WeatherIcon weather={nowPlus2} size={70} className="icon-next2"/>
       <div className="hemisphere">Northern Hemisphere</div>
 
       <style jsx global>{`
@@ -146,14 +146,14 @@ export default () => {
         font-family: Ubuntu, sans-serif;
         font-size: 16px;
         font-weight: 400;
-        width: 400px;
-        height: 80px;
+        width: 420px;
+        height: 90px;
       }
 
       .wrapper {
         display: grid;
-        grid-template-columns: 80px 160px 80px 80px;
-        grid-template-rows: 15px 50px 15px;
+        grid-template-columns: 90px 170px 80px 80px;
+        grid-template-rows: 15px 60px 15px;
         grid-template-areas:
         "a b c d"
         "a e f g"
